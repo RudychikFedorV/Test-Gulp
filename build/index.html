@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Тестовое задание</title>
+		<title>test</title>
 		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -53,14 +53,88 @@
 				</p>
 				<a href="/" class="welcome-btn">ПЕРЕЙТИ К&#160;МЕНЮ</a>
 			</section>
+			<section class="menu">
+				<h1 class="menu-title">Меню</h1>
+				<p class="menu-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.</p>
+				<div class="menu-blocks"></div>
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="menu-blocks__block">
+								<picture>
+									<source srcset="./img/menu-01.webp 1x, ./img/menu-01@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/menu-01.jpg 1x, ./img/menu-01@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/menu-01.jpg" alt="Салаты" class="menu-blocks__block-img" />
+								</picture>
+								<p class="menu-blocks__block-name">Салаты</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="menu-blocks__block">
+								<picture>
+									<source srcset="./img/menu-02.webp 1x, ./img/menu-02@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/menu-02.jpg 1x, ./img/menu-02@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/menu-02.jpg" alt="Выпечка" class="menu-blocks__block-img" />
+								</picture>
+								<p class="menu-blocks__block-name">Выпечка</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="menu-blocks__block">
+								<picture>
+									<source srcset="./img/menu-03.webp 1x, ./img/menu-03@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/menu-03.jpg 1x, ./img/menu-03@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/menu-03.jpg" alt="Супы" class="menu-blocks__block-img" />
+								</picture>
+								<p class="menu-blocks__block-name">Супы</p>
+								<a href="/" class="menu-blocks__block-btn">открыть меню</a>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="menu-blocks__block">
+								<picture>
+									<source srcset="./img/menu-04.webp 1x, ./img/menu-04@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/menu-04.jpg 1x, ./img/menu-04@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/menu-04.jpg" alt="Блюда на мангале" class="menu-blocks__block-img" />
+								</picture>
+								<p class="menu-blocks__block-name">Блюда на&#160;мангале</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="menu-blocks__block">
+								<picture>
+									<source srcset="./img/menu-05.webp 1x, ./img/menu-05@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/menu-05.jpg 1x, ./img/menu-05@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/menu-05.jpg" alt="Горячие блюда" class="menu-blocks__block-img" />
+								</picture>
+								<p class="menu-blocks__block-name">Горячие блюда</p>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="menu-blocks__block">
+								<picture>
+									<source srcset="./img/menu-06.webp 1x, ./img/menu-06@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/menu-06.jpg 1x, ./img/menu-06@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/menu-06.jpg" alt="Соусы" class="menu-blocks__block-img" />
+								</picture>
+								<p class="menu-blocks__block-name">Соусы</p>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
 
-			<footer class="footer"></footer>
+					<div class="swiper-button-prev swiper-button"><img src="./img/svg/left-arrow.svg" alt="arrow" /></div>
+					<div class="swiper-button-next swiper-button"><img src="./img/svg/right-arrow.svg" alt="arrow" /></div>
+
+					<!-- <div class="swiper-scrollbar"></div> -->
+				</div>
+			</section>
 		</div>
 		<script>
 			function navToggle() {
 				document.getElementById("headerUl").classList.toggle("_active");
 			}
 		</script>
-		<script src="./js/index.js"></script>
+		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

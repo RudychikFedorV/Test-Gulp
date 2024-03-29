@@ -1,58 +1,59 @@
 .menu {
-//   background: url(../../img/white-talcume-powder-explosion-black.jpg);
+  background: url(../../img/white-talcume-powder-explosion-black.jpg);
+  background-size: auto;
   padding-top: 50px;
-  //   @include f-c-c;
-  //   flex-direction: column;
+
   &-title {
     text-align: center;
-    font-family: var(--font-family);
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 146%;
-    color: #fff;
+    font: var(--txt-900-48-ff);
+    color: $--text-white;
     margin-bottom: 25px;
   }
   &-txt {
     max-width: 632px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
+    font: var(--txt-400-16-ff);
     text-align: center;
     margin-inline: auto;
-    color: #fff;
+    color: $--text-white;
     margin-bottom: 62.5px;
   }
   &-blocks {
     display: flex;
     &__block {
       position: relative;
+      width: 100%;
       max-width: 288px;
       max-height: 508px;
-      &-img {
-        max-width: 288px;
-        max-height: 508px;
-      }
+
       &-name {
-        font-family: var(--font-family);
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 292%;
-        color: #fff;
+        font: var(--txt-600-24-ff);
+        color: $--text-white;
         position: absolute;
         display: inline-block;
+        white-space: nowrap;
         bottom: 10px;
-        left: 30%;
+        left: 50%;
+        transform: translateX(-50%);
       }
       &-btn {
         position: absolute;
-        bottom: 224px;
-        left: 30%;
-        font-family: var(--font-family);
-        font-weight: 900;
-        font-size: 14px;
+        bottom: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%);
+        font: var(--txt-900-14-ff);
         text-transform: uppercase;
-        color: #fff;
+        color: $--text-white;
+        padding: 21px 55px;
+        border: 2px solid $--color-border;
+        border-radius: 5px;
+        background: $--background-btn;
+        white-space: nowrap;
       }
     }
   }
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  display: none;
 }
