@@ -129,6 +129,73 @@
 					<!-- <div class="swiper-scrollbar"></div> -->
 				</div>
 			</section>
+			<section class="gallery">
+				<h1 class="gallery-title">Галлерея</h1>
+				<p class="gallery-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit convallis aliquam consequat turpis.</p>
+				<span class="gallery-layer">
+					<picture>
+						<source srcset="./img/layer-3-1.webp 1x, ./img/layer-3-1@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/layer-3-1.png 1x, ./img/layer-3-1@2x.png 2x" type="image/png" />
+						<img src="./img/layer-3-1.png" alt="Layer" />
+					</picture>
+				</span>
+				<div class="gallery-sections">
+					<picture>
+						<source srcset="./img/gal1.webp 1x, ./img/gal1@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/gal1.jpg 1x, ./img/gal1@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/gal1.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal1.jpg')" />
+					</picture>
+					<picture>
+						<source srcset="./img/gal2.webp 1x, ./img/gal2@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/gal2.jpg 1x, ./img/gal2@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/gal2.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal2.jpg')" />
+					</picture>
+					<picture>
+						<source srcset="./img/gal3.webp 1x, ./img/gal3@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/gal3.jpg 1x, ./img/gal3@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/gal3.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal3.jpg')" />
+					</picture>
+					<picture>
+						<source srcset="./img/gal4.webp 1x, ./img/gal4@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/gal4.jpg 1x, ./img/gal4@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/gal4.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal4.jpg')" />
+					</picture>
+					<picture>
+						<source srcset="./img/gal5.webp 1x, ./img/gal5@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/gal5.jpg 1x, ./img/gal5@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/gal5.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal5.jpg')" />
+					</picture>
+					<picture>
+						<source srcset="./img/gal6.webp 1x, ./img/gal6@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/gal6.jpg 1x, ./img/gal6@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/gal6.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal6.jpg')" />
+					</picture>
+					<picture>
+						<source srcset="./img/gal7.webp 1x, ./img/gal7@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/gal7.jpg 1x, ./img/gal7@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/gal7.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal7.jpg')" />
+					</picture>
+					<picture>
+						<source srcset="./img/gal8.webp 1x, ./img/gal8@2x.webp 2x" type="image/webp" />
+						<source srcset="./img/gal8.jpg 1x, ./img/gal8@2x.jpg 2x" type="image/jpeg" />
+						<img src="./img/gal8.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal8.jpg')" />
+					</picture>
+				</div>
+				<div id="myModal" class="modal">
+					<span class="close" onclick="closeModal()">&#215;</span>
+					<img src="" id="modalImg" class="modal-content" />
+				</div>
+			</section>
+			<script>
+				function openModal(imageUrl) {
+					document.getElementById("myModal").style.display = "block";
+					document.getElementById("modalImg").src = imageUrl;
+				}
+
+				function closeModal() {
+					document.getElementById("myModal").style.display = "none";
+				}
+			</script>
 		</div>
 		<script>
 			function navToggle() {

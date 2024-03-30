@@ -1,5 +1,6 @@
 .menu {
   background: url(../../img/white-talcume-powder-explosion-black.jpg);
+  height: 1830px;
   background-size: auto;
   padding-top: 50px;
 
@@ -39,8 +40,8 @@
         position: absolute;
         bottom: 50%;
         transform: translateY(-50%);
-        left: 50%;
-        transform: translateX(-50%);
+        left: 10%;
+        right: 10%;
         font: var(--txt-900-14-ff);
         text-transform: uppercase;
         color: $--text-white;

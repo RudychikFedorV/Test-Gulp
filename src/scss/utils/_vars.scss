@@ -23,4 +23,7 @@ $--text-white: #fff;
 $--text-span: #b82121;
 $--color-border:  rgba(255, 255, 255, 0.6);
 $--background-btn: rgba(0, 0, 0, 0.65);
-
+// &:not(:last-child) {
+//  border-right: var(--c-borderR);
+// }
+// --c-borderR: 1px solid #e7eaeb;

@@ -1,0 +1,33 @@
+<section class="gallery">
+    <h1 class="gallery-title">Галлерея</h1>
+    <p class="gallery-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium netus urna hendrerit
+        convallis aliquam consequat turpis.
+    </p>
+    <span class="gallery-layer">
+        <img src="../../img/layer-3-1.png" alt="Layer">
+    </span>
+    <div class="gallery-sections">
+        <img src="../../img/gal1.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal1.jpg')">
+        <img src="../../img/gal2.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal2.jpg')">
+        <img src="../../img/gal3.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal3.jpg')">
+        <img src="../../img/gal4.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal4.jpg')">
+        <img src="../../img/gal5.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal5.jpg')">
+        <img src="../../img/gal6.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal6.jpg')">
+        <img src="../../img/gal7.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal7.jpg')">
+        <img src="../../img/gal8.jpg" alt="Галлерея" class="gallery-sections__img" onclick="openModal('../../img/gal8.jpg')">
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img src="" id="modalImg" class="modal-content">
+    </div>
+</section>
+<script>
+    function openModal(imageUrl) {
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("modalImg").src = imageUrl;
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+</script>

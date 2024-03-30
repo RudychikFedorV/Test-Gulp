@@ -56,3 +56,10 @@ $mobile-small: 480px;
   justify-content: flex-end;
   align-items: center;
 }
+@mixin pseudo-element {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
