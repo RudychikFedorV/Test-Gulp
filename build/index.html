@@ -196,6 +196,34 @@
 					document.getElementById("myModal").style.display = "none";
 				}
 			</script>
+			<footer class="footer">
+				<div class="footer-sections">
+					<img src="./img/svg/logo.svg" alt="Logo" class="footer-sections__logo icons" />
+					<span class="footer-span"></span>
+					<div class="footer-sections__icons">
+						<a href="tel:+380 (98) 765 43 21" class="footer-sections__icons-phone">+380 (98) 765 43 21</a>
+						<div class="footer-sections__icons-icon">
+							<a href="/"><img src="./img/svg/telegram.svg" alt="Telegram" class="icons"/></a>
+							<a href="/"><img src="./img/svg/viber-mob.svg" alt="Viber" class="icons"/></a>
+							<a href="/"><img src="./img/svg/whatsapp.svg" alt="Whatsapp" class="icons"/></a>
+						</div>
+					</div>
+					<span class="footer-span"></span>
+					<p class="footer-sections__address">г. Киев, станция метро &#171;Крещатик&#187;</p>
+					<span class="footer-span"></span>
+					<a href="mailto:mail@mal.ua" class="footer-sections__email">Email: mail@mal.ua</a>
+				</div>
+				<div class="footer-bloks">
+					<div class="footer-bloks__txt">
+						<p class="footer-bloks__txt-desc">Политика конфиденциальности</p>
+						<p class="footer-bloks__txt-info">Пользовательское соглашение</p>
+					</div>
+					<p class="footer-bloks__text">Динамо. Грузинское бистро. Все права защищены, <span id="copyright"></span></p>
+				</div>
+			</footer>
+			<script>
+				document.getElementById("copyright").textContent = new Date().getFullYear();
+			</script>
 		</div>
 		<script>
 			function navToggle() {

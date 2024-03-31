@@ -16,14 +16,13 @@
   --txt-400-16-ff: normal 400 16px / normal var(--ff);
 
   --txt-700-21-sf: normal 700 21px / normal var(--sf);
- 
+  --txt-400-14-sf: normal 400 14px / normal var(--sf);
+  --txt-400-12-sf: normal 400 12px / normal var(--sf);
 }
 $--background-primary: #8842f0;
 $--text-white: #fff;
+$--color-txt: #e0e0e0;
 $--text-span: #b82121;
-$--color-border:  rgba(255, 255, 255, 0.6);
+$--color-border: rgba(255, 255, 255, 0.6);
 $--background-btn: rgba(0, 0, 0, 0.65);
-// &:not(:last-child) {
-//  border-right: var(--c-borderR);
-// }
-// --c-borderR: 1px solid #e7eaeb;
+$--background-span: #393939;
