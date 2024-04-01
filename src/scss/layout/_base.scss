@@ -6,6 +6,7 @@ body {
   --font-family: var(--ff);
   --second-family: var(--sf);
   --third-family: var(--tf);
+  scroll-behavior: smooth;
 }
 .wrapper {
   max-width: 1440px;
